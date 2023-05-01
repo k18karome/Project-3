@@ -1,38 +1,169 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-#container, fieldset, div {
+nav {
+	padding-left: 0;
+/*	width:100vw;*/
+	padding:.5em;
+	background-color:#1d2836;
+	color:whitesmoke;
+}
+.h2-special {
+	margin-bottom: .2em;
+
+}
+
+.transparent {
+	font-weight:300;
+	margin-top: 0;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+	font-weight: 300;
+}
+
+h2 {
+	font-weight:600;
+}
+
+.h2-pad {
+	margin-top: 1em;
+	margin-bottom: calc(1em - 12px);
+}
+
+header {	
+	text-align: center;
+	border-bottom: 5px solid black;
+	margin-bottom:3px;
+}
+
+#container, fieldset, div, body {
 	display:flex;
 	flex-direction: column;
 	flex-wrap:wrap;
 	justify-content: center;
 }
 
+.news {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.news input  {
+	width:20px;
+	height:13px;
+	padding:4px;
+	display: block;
+}
+
+.news label {
+	width:50vw;
+	margin-top:0;
+}
+
 fieldset {
+	margin-left: 0;
+	margin-right: 0;
+	border-top: 2px solid black;
 	border-left:none;
 	border-right:none;
 	border-bottom:none;
 }
 
 label {
+	font-weight: 300;
 	margin-top:.75em;
 	margin-bottom:.25em;
 }
 
 input[type=email]::placeholder {
 	text-align: right;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 input[type="text"]::placeholder {
 	text-align: right;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.5);
 }
 
-input , select {
-	width:80vw;
+option:disabled{
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.topics label {
+	width: 80vw;
+	margin-bottom: .75em;
+}
+
+select > option {
+	font-weight: 300;
+}
+
+textarea {
+	width:90vw;
+	padding:0;
+}
+
+input , select , textarea{
+	border:none;
+	background-color:rgba(172, 174, 176, 0.3);
+	padding: .7em;
+	border-radius: 3px;
 }
 
 input[type="number"] {
 	width:150px;
 	margin-bottom: 1em;
 }
+
+input[type="submit"] {
+	background-color: #43d9cc;
+	color: whitesmoke;
+	margin-top: 1.2em;
+	font-size: 1.2em;
+}
+
+.top-marg {
+	margin-top:1.2em;
+}
+
+footer {
+	text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width:481px) {
+	textarea {
+		align-self: center;
+	}
+	input[type="submit"] {
+		align-self: center;
+		width:90vw;
+	}
+}
+
+@media screen and (min-width:650px) {
+	body{
+		justify-content: center;
+	}
+
+	body , fieldset , header {
+		width:650px;
+	}
+	.name label {
+		width:20vw;
+	}
+	.name input {
+		width:40vw;
+	}
+}
+
+
+
