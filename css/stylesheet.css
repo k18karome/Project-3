@@ -5,7 +5,6 @@
 
 nav {
 	padding-left: 0;
-/*	width:100vw;*/
 	padding:.5em;
 	background-color:#1d2836;
 	color:whitesmoke;
@@ -40,7 +39,7 @@ header {
 	margin-bottom:3px;
 }
 
-#container, fieldset, div, body {
+#container, fieldset, div, body , main , header {
 	display:flex;
 	flex-direction: column;
 	flex-wrap:wrap;
@@ -143,25 +142,61 @@ footer {
 	textarea {
 		align-self: center;
 	}
-	input[type="submit"] {
-		align-self: center;
-		width:90vw;
-	}
 }
 
 @media screen and (min-width:650px) {
-	body{
+	body {
 		justify-content: center;
 	}
-
-	body , fieldset , header {
+	html {
+		background-color: white;
+	}
+	main , div {
+		flex-direction: row;
+	}
+	div {
+		margin-bottom:.5em;
+	}
+	body , header , fieldset , textarea {
 		width:650px;
 	}
-	.name label {
-		width:20vw;
+	nav {
+		width:100vw;
 	}
-	.name input {
-		width:40vw;
+	.name label {
+		width:155px;
+	}
+	input {
+		width:440px;
+	}
+	input[type="submit"] {
+		align-self: center;
+		width:650px;
+	}
+	form {
+		width: 650px;
+	}
+	label {
+		margin:auto;
+	}
+	.news label {
+		margin-left:0px;
+	}
+	select {
+		width:440px;
+	}
+	.zip input {
+		width: 150px;
+	}
+	.zip label {
+		margin-left: 15.5px;
+		margin-right: 15.5px;
+	}
+	.zip {
+		align-self: flex-start;
+	}
+	.topics label {
+		width:650px;
 	}
 }
 
