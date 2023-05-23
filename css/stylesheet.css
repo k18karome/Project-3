@@ -8,6 +8,7 @@ nav {
 	padding:.5em;
 	background-color:#1d2836;
 	color:whitesmoke;
+	text-align: center;
 }
 .h2-special {
 	margin-bottom: .2em;
@@ -35,8 +36,10 @@ h2 {
 
 header {	
 	text-align: center;
+	align-self: center;
 	border-bottom: 5px solid black;
 	margin-bottom:3px;
+	width:99vw;
 }
 
 #container, fieldset, div, body , main , header {
@@ -157,7 +160,7 @@ footer {
 	div {
 		margin-bottom:.5em;
 	}
-	body , header , fieldset , textarea {
+	body , fieldset , textarea , header {
 		width:650px;
 	}
 	nav {
