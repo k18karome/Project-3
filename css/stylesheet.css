@@ -3,6 +3,10 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+	margin:0;
+}
+
 nav {
 	padding-left: 0;
 	padding:.5em;
@@ -10,6 +14,7 @@ nav {
 	color:whitesmoke;
 	text-align: center;
 }
+
 .h2-special {
 	margin-bottom: .2em;
 
@@ -39,7 +44,7 @@ header {
 	align-self: center;
 	border-bottom: 5px solid black;
 	margin-bottom:3px;
-	width:99vw;
+	display: flex;
 }
 
 #container, fieldset, div, body , main , header {
@@ -80,7 +85,7 @@ legend {
   	float: left;
   	margin-bottom: .75em;
   	margin-top: 1em;
-  	width: 100%;
+  	width: 90%;
   	font-size: 1.2em;
 }
 
@@ -179,8 +184,12 @@ footer {
 	div {
 		margin-bottom:.5em;
 	}
-	body , fieldset , textarea , header {
+	body , fieldset , header {
 		width:650px;
+	}
+	textarea {
+		width:626px;
+		padding:0;
 	}
 	nav {
 		width:100vw;
@@ -193,7 +202,7 @@ footer {
 	}
 	input[type="submit"] {
 		align-self: center;
-		width:650px;
+		width:626px;
 	}
 	form {
 		width: 650px;
@@ -218,26 +227,29 @@ footer {
 		align-self: flex-start;
 	}
 	.topics label {
-		width:650px;
+		width:626px;
 	}
 }
 @media screen and (min-width:768px) {
-	body , fieldset , textarea , header {
-		width:768px;
+	body , fieldset , header {
+		width:700px;
 	}
+	textarea {
+		width:676px;
+	} 
 	form {
-		width:768px;
+		width:700px;
 	}
 	.zip label {
-		margin-left: 74.5px;
-		margin-right: 74.5px;
+		margin-left: 40.5px;
+		margin-right: 40.5px;
 	}
 	.topics label {
-		width:768px;
+		width:676px;
 	}
 	input[type="submit"] {
 		align-self: center;
-		width:768px;
+		width:676px;
 	}
 }
 
