@@ -23,7 +23,7 @@
 		<div id="container">
 			<form class="contact-info">
 			<fieldset class="field-width">
-				<h2 class="h2-pad">Contact Information</h2>
+				<legend>Contact Information</legend>
 
 				<div class="name">
 					<label for="name">Full Name</label>
@@ -36,8 +36,8 @@
 				</div>
 
 				<div class="name">
-					<label for="phone">Phone Number</label>
-					<input type="text" id="phone" name="user-phone">
+					<label class="phone" for="phone">Phone Number</label>
+					<input class="phone number" type="number" id="phone" name="user-phone">
 				</div>
 
 				<div class="name">
@@ -70,11 +70,11 @@
 
 				<div class="name zip">
 					<label class="zip" for="zip">Zip Code</label>
-					<input class="zip" type="number" id="zip">
+					<input class="zip" type="number" id="zip" name="user-zip">
 				</div>
 			</fieldset>
 			<fieldset class="field-width">
-				<h2>Newsletter</h2>
+				<legend>Newsletter</legend>
 
 				<p>Select the newsletter you would like to receive</p>
 
@@ -96,13 +96,13 @@
 				<p class="top-marg">Newsletter format</p>
 
 				<div class="news">
-					<input type="radio" id="newsletter-format1" name="newsletter-format" value="html">
+					<input type="radio" id="newsletter-format1" name="newsletter-format1" value="html">
 					<label for="newsletter-format1">HTML</label>
 				</div>
 				
 				<div class="news">
-					<input type="radio" id="newsletter-format2" name="newsletter-format" value="plain-text">
-					<label for="newsletter-format1">Plain text</label>
+					<input type="radio" id="newsletter-format2" name="newsletter-format2" value="plain-text">
+					<label for="newsletter-format2">Plain text</label>
 				</div>
 
 				<div class="topics">
@@ -111,6 +111,7 @@
 				</div>
 
 				<input type="submit" class="btn submit" value="Sign Up">
+				<input type="reset" class="btn reset" value="Reset">
 			</fieldset>
 			</form>
 		</div>

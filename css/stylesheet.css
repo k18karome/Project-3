@@ -75,6 +75,15 @@ fieldset {
 	border-bottom:none;
 }
 
+legend {
+	font-weight:600;
+  	float: left;
+  	margin-bottom: .75em;
+  	margin-top: 1em;
+  	width: 100%;
+  	font-size: 1.2em;
+}
+
 label {
 	font-weight: 300;
 	margin-top:.75em;
@@ -119,9 +128,19 @@ input , select , textarea{
 	border-radius: 3px;
 }
 
-input[type="number"] {
+.zip input {
 	width:150px;
 	margin-bottom: 1em;
+}
+
+input[type="reset"] {
+	background-color: #189e92;
+	color: whitesmoke;
+	margin-top: .1em;
+	font-size: 1.2em;
+	width: 150px;
+	padding:.25em;
+	align-self: center;
 }
 
 input[type="submit"] {
@@ -189,7 +208,7 @@ footer {
 		width:440px;
 	}
 	.zip input {
-		width: 150px;
+		width: calc(440px * .25);
 	}
 	.zip label {
 		margin-left: 15.5px;
@@ -202,6 +221,23 @@ footer {
 		width:650px;
 	}
 }
-
-
+@media screen and (min-width:768px) {
+	body , fieldset , textarea , header {
+		width:768px;
+	}
+	form {
+		width:768px;
+	}
+	.zip label {
+		margin-left: 74.5px;
+		margin-right: 74.5px;
+	}
+	.topics label {
+		width:768px;
+	}
+	input[type="submit"] {
+		align-self: center;
+		width:768px;
+	}
+}
 
