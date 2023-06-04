@@ -3,8 +3,16 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+html {
+	background-color: #FFFFF2;
+}
+
 body {
 	margin:0;
+}
+
+fieldset {
+	background-color: #f7f4e9;
 }
 
 nav {
@@ -59,6 +67,14 @@ header {
 	justify-content: left;
 }
 
+.focus {
+	transition: background-color 1.5s;
+}
+
+.focus:focus {
+	background-color: rgba(214, 2, 48, 0.6);
+}
+
 .news input  {
 	width:6.25%;
 	height:13px;
@@ -107,6 +123,12 @@ input[type="text"]::placeholder {
 	color: rgba(0, 0, 0, 0.5);
 }
 
+input[type=tel]::placeholder {
+	text-align: right;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.5);
+}
+
 option:disabled{
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.5);
@@ -125,10 +147,19 @@ textarea {
 	width:90%;
 	padding:0;
 	align-self: center;
+	font-weight: 300;
 }
 
-input , select , textarea{
+.border ,  select , textarea{
 	border:none;
+	background-color:rgba(172, 174, 176, 0.3);
+	padding: .7em;
+	border-radius: 3px;
+}
+
+input:required {
+	border-color: #0d33f2;
+	border-width: 3px;
 	background-color:rgba(172, 174, 176, 0.3);
 	padding: .7em;
 	border-radius: 3px;
@@ -175,9 +206,6 @@ footer {
 @media screen and (min-width:650px) {
 	body {
 		justify-content: center;
-	}
-	html {
-		background-color: white;
 	}
 	main , div {
 		flex-direction: row;

@@ -22,37 +22,37 @@
 	<main>
 		<div id="container">
 			<form class="contact-info">
-			<fieldset class="field-width">
+			<fieldset class="field-width contact">
 				<legend>Contact Information</legend>
 
 				<div class="name">
 					<label for="name">Full Name</label>
-					<input type="text" id="name" name="user-name" required placeholder="Required">
+					<input class="focus place" type="text" id="name" name="user-name" placeholder="Required" required >
 				</div>
 
 				<div class="name">
 					<label for="email">Email Address</label>
-					<input type="email" id="email" name="user-email" required placeholder="Required">
+					<input class="focus place" type="email" id="email" name="user-email" placeholder="Required" required >
 				</div>
 
 				<div class="name">
 					<label for="phone">Phone Number</label>
-					<input type="tel" id="phone" name="user-phone">
+					<input class="focus border" type="tel" id="phone" name="user-phone" placeholder="(808)-123-4567">
 				</div>
 
 				<div class="name">
 					<label for="address">Street Address</label>
-					<input type="text" id="address" name="user-address">
+					<input class="focus border" type="text" id="address" name="user-address" placeholder="115 Default Ave.">
 				</div>
 
 				<div class="name">
 					<label for="city">City</label>
-					<input type="text" id="city" name="user-city">
+					<input class="focus border" type="text" id="city" name="user-city" placeholder="Honolulu">
 				</div>
 
 				<div class="name">
 					<label for="state">State</label>
-					<select id="state" name="user-state">
+					<select class="focus" id="state" name="user-state">
 						<option disabled selected>Choose State</option>
 						<option>Alabama</option>
 						<option>Alaska</option>
@@ -70,48 +70,48 @@
 
 				<div class="name zip">
 					<label class="zip" for="zip">Zip Code</label>
-					<input class="zip" type="number" id="zip" name="user-zip">
+					<input class="focus zip border" type="number" id="zip" name="user-zip" placeholder="91234">
 				</div>
 			</fieldset>
-			<fieldset class="field-width">
+			<fieldset class="field-width more">
 				<legend>Newsletter</legend>
 
 				<p>Select the newsletter you would like to receive</p>
 
 				<div class="news">
-					<input type="checkbox" id="newsletter1" name="newsletter1" value="html-news">
+					<input class="focus" type="checkbox" id="newsletter1" name="newsletter1" value="html-news">
 					<label for="newsletter1">HTML News</label>
 				</div>
 				
 				<div class="news">
-					<input type="checkbox" id="newsletter2" name="newsletter2" value="css-news">
+					<input class="focus" type="checkbox" id="newsletter2" name="newsletter2" value="css-news">
 					<label for="newsletter2">CSS News</label>
 				</div>
 				
 				<div class="news">
-					<input type="checkbox" id="newsletter3" name="newsletter3" value="javascript-news">
+					<input class="focus" type="checkbox" id="newsletter3" name="newsletter3" value="javascript-news">
 					<label for="newsletter3">Javascript News</label>
 				</div>
 
 				<p class="top-marg">Newsletter format</p>
 
 				<div class="news">
-					<input type="radio" id="newsletter-format1" name="newsletter-format" value="html">
+					<input class="focus" type="radio" id="newsletter-format1" name="newsletter-format" value="html">
 					<label for="newsletter-format1">HTML</label>
 				</div>
 				
 				<div class="news">
-					<input type="radio" id="newsletter-format2" name="newsletter-format" value="plain-text">
+					<input class="focus" type="radio" id="newsletter-format2" name="newsletter-format" value="plain-text">
 					<label for="newsletter-format2">Plain text</label>
 				</div>
 
 				<div class="topics">
 					<label for="topics">Other topics you'd like to hear about</label>
-					<textarea id="topics" rows="4"></textarea>
+					<textarea class="focus" id="topics" rows="4" name="othertopics" placeholder="Enter topics here..."></textarea>
 				</div>
 
-				<input type="submit" class="btn submit" value="Sign Up">
-				<input type="reset" class="btn reset" value="Reset">
+				<input type="submit" class="focus btn submit border" value="Sign Up">
+				<input type="reset" class="focus btn reset border" value="Reset">
 			</fieldset>
 			</form>
 		</div>
