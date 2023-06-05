@@ -11,7 +11,7 @@ body {
 	margin:0;
 }
 
-fieldset {
+form {
 	background-color: #f7f4e9;
 }
 
@@ -50,9 +50,14 @@ h2 {
 header {	
 	text-align: center;
 	align-self: center;
-	border-bottom: 5px solid black;
-	margin-bottom:3px;
+	border-bottom:2px solid black;
+	margin:0px;
 	display: flex;
+}
+
+.headborder {
+	border-top: 4px solid black;
+	margin-bottom: 3px;
 }
 
 #container, fieldset, div, body , main , header {
@@ -90,17 +95,19 @@ header {
 fieldset {
 	margin-left: 0;
 	margin-right: 0;
-	border-top: 2px solid black;
+	border-top: none;
 	border-left:none;
 	border-right:none;
 	border-bottom:none;
+	padding-top:0px;
+	padding-bottom:0px;
+	border-radius: 3px;
 }
 
 legend {
 	font-weight:600;
-  	float: left;
-  	margin-bottom: .75em;
-  	margin-top: 1em;
+  	margin-bottom: 0px;
+  	margin-top: 0px;
   	width: 90%;
   	font-size: 1.2em;
 }
@@ -195,6 +202,12 @@ footer {
 	text-align: center;
 }
 
+hr {
+	border-top: 2px solid black;
+	width:100%;
+	margin:0px;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (min-width:481px) {
@@ -283,8 +296,8 @@ footer {
 	}
 	.zip label {
 		width:162.23px;
-		margin-left: 24.969px;
-		margin-right: 24.969px;
+		margin-left: 27.047px;
+		margin-right: 27.047px;
 	}
 }
 
